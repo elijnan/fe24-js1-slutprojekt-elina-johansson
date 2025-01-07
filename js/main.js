@@ -44,6 +44,7 @@ async function search(query) {
 function displayMovies(movies, title) {
     resultsTitle.textContent = title;
     resultsContainer.innerHTML = '';
+    
     movies.slice(0, 10).forEach(movie => {
         const item = document.createElement('div');
         item.classList.add('result-item');
