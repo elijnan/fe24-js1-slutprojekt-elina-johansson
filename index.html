@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The movie database</title>
     <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Include Anime.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    
     <script src="./js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div id="pagetitle">
-        <h1>The movie database by Elina</h1>
-    </div>
+            <h1>The movie database by Elina</h1>
+        </div>
         <nav>
             <button id="top-rated-btn">Top Rated</button>
             <button id="popular-btn">Popular</button>
         </nav>
         <div id="search-container">
-                        
-            <input type="text" id="search-input" placeholder="Search for movies or people">
-
+            <input type="text" id="search-input" placeholder="Search for movies or people" required>
             <button id="search-btn">Search</button>
         </div>
-        
         <div id="search-options">
             <label>
                 <input type="radio" name="search-type" value="movie" checked> Movie
             </label>
             <label>
-                <input type="radio" name="search-type" value="person "> Person
+                <input type="radio" name="search-type" value="person"> Person
             </label>
         </div>
     </header>
@@ -43,7 +44,5 @@
     <footer>
         <p>elina johansson &copy; Java Script 1 Slutprojekt</p>
     </footer>
-
-
 </body>
 </html>

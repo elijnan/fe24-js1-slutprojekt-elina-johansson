@@ -30,16 +30,8 @@ button:hover {
     background-color: black;
 }
 
-.btn:hover{
-    opacity: 0.8;
-}
-
 #pagetitle{
     background-color: hsl(330, 95%, 77%);
-}
-
-.hidden{
-    display: none;
 }
 
 #search-container {
